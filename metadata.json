@@ -1,0 +1,6 @@
+{
+  "name": "TheCoachOS™ VSL Landing Page",
+  "description": "High-converting VSL landing page for TheCoachOS™",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

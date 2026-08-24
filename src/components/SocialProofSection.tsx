@@ -1,0 +1,234 @@
+import React from 'react';
+import { motion } from 'motion/react';
+import { ResultCardData } from '../types';
+import { CtaButton } from './CtaButton';
+
+const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
+  {
+    id: 'card-1',
+    resultLine: '₹1 Crore in 12 Months',
+    name: 'Tahwid',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Tahwid.JPG',
+    imageAlt: 'Tahwid client result',
+    before: 'Stuck like most coaches. No system. No predictability. Income going nowhere.',
+    after: 'Crossed ₹1 crore in coaching revenue in 12 months. Same skill. Different system.',
+    afterFormatted: (
+      <>
+        Crossed <strong className="font-bold text-[#F0ECE1]">₹1 crore</strong> in coaching revenue in 12 months. Same skill. Different system.
+      </>
+    ),
+  },
+  {
+    id: 'card-2',
+    resultLine: '₹5L in Six Weeks, ₹10L in 60 Days',
+    name: 'Upasana',
+    role: 'Business Coach',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Upasana.jpg',
+    imageAlt: 'Upasana client result',
+    before: 'Spent over ₹1L on programs. Got information. Zero results.',
+    after: 'Crossed ₹5L in six weeks. Scaled to ₹10L in the next 60 days.',
+    afterFormatted: (
+      <>
+        Crossed <strong className="font-bold text-[#F0ECE1]">₹5L</strong> in six weeks. Scaled to <strong className="font-bold text-[#F0ECE1]">₹10L</strong> in the next 60 days.
+      </>
+    ),
+    quote: 'It does not just teach theory. It guides you step by step.',
+  },
+  {
+    id: 'card-3',
+    resultLine: '₹3 Lakh in 30 Days',
+    name: 'Nidhi',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Nidhi.JPG',
+    imageAlt: 'Nidhi client result',
+    before: 'Never made more than ₹50,000 in a single month.',
+    after: 'Made ₹3 lakh in 30 days of installing TheCoachOS™.',
+    afterFormatted: (
+      <>
+        Made <strong className="font-bold text-[#F0ECE1]">₹3 lakh</strong> in 30 days of installing TheCoachOS™.
+      </>
+    ),
+  },
+  {
+    id: 'card-4',
+    resultLine: 'First Client in 10 Days',
+    name: 'Shweta',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Shweta.png',
+    imageAlt: 'Shweta client result',
+    before: 'Two full years of posting. Two years of DMs. Two years of nothing.',
+    after: 'First paying client in 10 days. Two years of struggle ended in 10 days with the right system.',
+    afterFormatted: (
+      <>
+        First paying client in 10 days. Two years of struggle ended in 10 days with the right system.
+      </>
+    ),
+  },
+  {
+    id: 'card-5',
+    resultLine: 'Two Dollar Clients in 30 Days',
+    name: 'Sweta Sharma',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Sweta%20Sharma.JPG',
+    imageAlt: 'Sweta Sharma client result',
+    before: 'Zero international clients. Did not believe dollar-paying clients were possible for her.',
+    after: 'Closed two international clients paying in dollars within 30 days of installing TheCoachOS™.',
+    afterFormatted: (
+      <>
+        Closed two international clients paying in dollars within 30 days of installing TheCoachOS™.
+      </>
+    ),
+    quote: 'I never even expected I could sell at this level.',
+  },
+  {
+    id: 'card-6',
+    resultLine: '₹3 Lakh Deal from a Cold Stranger',
+    name: 'Supreet',
+    role: 'Life Coach',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Supreet.jpg',
+    imageAlt: 'Supreet client result',
+    before: 'Zero high-paying clients. Doubted whether ₹1L+ paying clients were even possible for him.',
+    after: 'Closed a ₹3L deal from a cold stranger who had never heard of him. Scaled beyond ₹10L by month three.',
+    afterFormatted: (
+      <>
+        Closed a <strong className="font-bold text-[#F0ECE1]">₹3L</strong> deal from a cold stranger who had never heard of him. Scaled beyond <strong className="font-bold text-[#F0ECE1]">₹10L</strong> by month three.
+      </>
+    ),
+    quote: 'I used to doubt if high-ticket clients were even possible for me. Now I know I am capable.',
+  },
+  {
+    id: 'card-7',
+    resultLine: 'Quit Her Job, Closed ₹1.2 Lakh',
+    name: 'Priyanka',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Priyanka.jpeg',
+    imageAlt: 'Priyanka client result',
+    before: 'Working in a bank. Wanted to coach full time but scared to leave.',
+    after: 'Quit her banking job. Signed her first paying client at ₹1.2 lakh after installing TheCoachOS™.',
+    afterFormatted: (
+      <>
+        Quit her banking job. Signed her first paying client at <strong className="font-bold text-[#F0ECE1]">₹1.2 lakh</strong> after installing TheCoachOS™.
+      </>
+    ),
+  },
+];
+
+export const SocialProofSection: React.FC = () => {
+  return (
+    <section
+      id="social-proof-section"
+      className="w-full bg-[#0E1412] pt-[32px] md:pt-[56px] pb-[110px] px-[20px] md:px-[48px]"
+    >
+      <div className="w-full max-w-[1080px] mx-auto flex flex-col items-center">
+        {/* Section Headline */}
+        <motion.h2
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          id="social-proof-headline"
+          className="w-full max-w-[320px] md:max-w-[1180px] mx-auto text-center font-bold text-[#F0ECE1] text-[22px] md:text-[44px] tracking-[-0.02em] leading-[1.25] md:leading-[1.15] mb-[28px] md:mb-[40px] [text-wrap:balance]"
+        >
+          <span className="block mb-[10px] md:mb-0">Coaches Who Had the Skill and No System.</span>
+          <span className="block">Here Is What Changed After TheCoachOS™.</span>
+        </motion.h2>
+
+        {/* 7 Result Cards Grid */}
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+          {RESULT_CARDS.map((card, index) => {
+            const isLastCard = index === 6;
+            return (
+              <motion.div
+                key={card.id}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: index * 0.06, ease: 'easeOut' }}
+                className={`w-full flex flex-col ${
+                  isLastCard
+                    ? 'md:col-span-2 md:max-w-[480px] md:mx-auto lg:col-span-1 lg:max-w-none lg:mx-0 lg:col-start-2'
+                    : ''
+                }`}
+              >
+                <div
+                  id={`result-card-${card.id}`}
+                  className="w-full h-full flex flex-col justify-between bg-[#16201D] border border-[#1E2F2A] rounded-[10px] p-[24px]"
+                >
+                  <div>
+                    {/* Card Photo */}
+                    {card.image && (
+                      <div className="w-full h-[300px] md:h-[260px] flex items-center justify-center bg-[#1E2F2A] rounded-[10px] overflow-hidden mb-[20px]">
+                        <img
+                          src={card.image}
+                          alt={card.imageAlt || `${card.name} client result`}
+                          loading="lazy"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                    )}
+
+                    {/* Result Line */}
+                    <div className="text-[16px] font-bold text-[#C9AB8B] text-center leading-snug">
+                      {card.resultLine}
+                    </div>
+
+                    {/* Name */}
+                    <div className="text-[18px] font-bold text-[#F0ECE1] text-center mt-[16px] leading-tight">
+                      {card.name}
+                    </div>
+
+                    {/* Role (omitted if none) */}
+                    {card.role && (
+                      <div className="text-[12px] uppercase tracking-[0.1em] text-[#C9AB8B] font-bold text-center mt-[6px]">
+                        {card.role}
+                      </div>
+                    )}
+
+                    {/* Divider */}
+                    <div className="w-full my-[24px] border-t border-[#1E2F2A]" />
+
+                    {/* BEFORE block */}
+                    <div>
+                      <div className="text-[12px] uppercase font-bold tracking-[0.1em] text-[#6B7A74]">
+                        BEFORE
+                      </div>
+                      <p className="text-[15px] font-normal text-[#A3B0A9] leading-[1.65] mt-[8px]">
+                        {card.before}
+                      </p>
+                    </div>
+
+                    {/* 20px gap */}
+                    <div className="h-[20px]" />
+
+                    {/* AFTER block */}
+                    <div>
+                      <div className="text-[12px] uppercase font-bold tracking-[0.1em] text-[#C9AB8B]">
+                        AFTER
+                      </div>
+                      <p className="text-[15px] font-normal text-[#F0ECE1] leading-[1.65] mt-[8px]">
+                        {card.afterFormatted}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Quote block (only if present) */}
+                  {card.quote && (
+                    <div className="mt-[20px] bg-[#1E2F2A] rounded-[10px] p-[16px]">
+                      <p
+                        className="italic text-[15px] text-[#A3B0A9] leading-[1.6]"
+                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      >
+                        "{card.quote}"
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+
+        {/* CTA Button below Result Cards */}
+        <div className="w-full flex justify-center mt-[44px]">
+          <CtaButton id="social-proof-cta-button" />
+        </div>
+      </div>
+    </section>
+  );
+};
