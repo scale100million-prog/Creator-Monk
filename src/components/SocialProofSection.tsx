@@ -22,7 +22,6 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     id: 'card-2',
     resultLine: '₹5L in Six Weeks, ₹10L in 60 Days',
     name: 'Upasana',
-    role: 'Business Coach',
     image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Upasana.jpg',
     imageAlt: 'Upasana client result',
     before: 'Spent over ₹1L on programs. Got information. Zero results.',
@@ -32,7 +31,20 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
         Crossed <strong className="font-bold text-[#F0ECE1]">₹5L</strong> in six weeks. Scaled to <strong className="font-bold text-[#F0ECE1]">₹10L</strong> in the next 60 days.
       </>
     ),
-    quote: 'It does not just teach theory. It guides you step by step.',
+  },
+  {
+    id: 'card-5',
+    resultLine: '₹5 Lakh From Two International Clients in 30 Days',
+    name: 'Sweta Sharma',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Sweta%20Sharma.JPG',
+    imageAlt: 'Sweta Sharma client result',
+    before: 'Zero international clients. She did not believe dollar-paying clients were possible for her.',
+    after: 'Closed two international clients paying in dollars within 30 days. ₹5 Lakh from those two clients alone.',
+    afterFormatted: (
+      <>
+        Closed two international clients paying in dollars within 30 days. <strong className="font-bold text-[#F0ECE1]">₹5 Lakh</strong> from those two clients alone.
+      </>
+    ),
   },
   {
     id: 'card-3',
@@ -41,10 +53,38 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Nidhi.JPG',
     imageAlt: 'Nidhi client result',
     before: 'Never made more than ₹50,000 in a single month.',
-    after: 'Made ₹3 lakh in 30 days of installing TheCoachOS™.',
+    after: 'Made ₹3 lakh in 30 days of installing the Client Acquisition System™.',
     afterFormatted: (
       <>
-        Made <strong className="font-bold text-[#F0ECE1]">₹3 lakh</strong> in 30 days of installing TheCoachOS™.
+        Made <strong className="font-bold text-[#F0ECE1]">₹3 lakh</strong> in 30 days of installing the Client Acquisition System™.
+      </>
+    ),
+  },
+  {
+    id: 'card-6',
+    resultLine: '₹3 Lakh Deal to ₹10 Lakh a Month in Three Months',
+    name: 'Supreet',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Supreet.jpg',
+    imageAlt: 'Supreet client result',
+    before: 'Zero high-paying clients. Doubted whether ₹1L+ paying clients were even possible for him.',
+    after: 'Closed a ₹3L deal from a cold stranger who had never heard of him. Scaled beyond ₹10L by month three.',
+    afterFormatted: (
+      <>
+        Closed a <strong className="font-bold text-[#F0ECE1]">₹3L</strong> deal from a cold stranger who had never heard of him. Scaled beyond <strong className="font-bold text-[#F0ECE1]">₹10L</strong> by month three.
+      </>
+    ),
+  },
+  {
+    id: 'card-7',
+    resultLine: 'Quit Her Bank Job and Signed a ₹1.2 Lakh Client',
+    name: 'Priyanka',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Priyanka.jpeg',
+    imageAlt: 'Priyanka client result',
+    before: 'Working a full time bank job. Wanted to coach but had no proof she could earn from it.',
+    after: 'Signed her first paying client at ₹1.2 lakh after installing the Client Acquisition System™. Then quit the bank job for good.',
+    afterFormatted: (
+      <>
+        Signed her first paying client at <strong className="font-bold text-[#F0ECE1]">₹1.2 lakh</strong> after installing the Client Acquisition System™. Then quit the bank job for good.
       </>
     ),
   },
@@ -62,73 +102,31 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
       </>
     ),
   },
-  {
-    id: 'card-5',
-    resultLine: 'Two Dollar Clients in 30 Days',
-    name: 'Sweta Sharma',
-    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Sweta%20Sharma.JPG',
-    imageAlt: 'Sweta Sharma client result',
-    before: 'Zero international clients. Did not believe dollar-paying clients were possible for her.',
-    after: 'Closed two international clients paying in dollars within 30 days of installing TheCoachOS™.',
-    afterFormatted: (
-      <>
-        Closed two international clients paying in dollars within 30 days of installing TheCoachOS™.
-      </>
-    ),
-    quote: 'I never even expected I could sell at this level.',
-  },
-  {
-    id: 'card-6',
-    resultLine: '₹3 Lakh Deal from a Cold Stranger',
-    name: 'Supreet',
-    role: 'Life Coach',
-    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Supreet.jpg',
-    imageAlt: 'Supreet client result',
-    before: 'Zero high-paying clients. Doubted whether ₹1L+ paying clients were even possible for him.',
-    after: 'Closed a ₹3L deal from a cold stranger who had never heard of him. Scaled beyond ₹10L by month three.',
-    afterFormatted: (
-      <>
-        Closed a <strong className="font-bold text-[#F0ECE1]">₹3L</strong> deal from a cold stranger who had never heard of him. Scaled beyond <strong className="font-bold text-[#F0ECE1]">₹10L</strong> by month three.
-      </>
-    ),
-    quote: 'I used to doubt if high-ticket clients were even possible for me. Now I know I am capable.',
-  },
-  {
-    id: 'card-7',
-    resultLine: 'Quit Her Job, Closed ₹1.2 Lakh',
-    name: 'Priyanka',
-    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Priyanka.jpeg',
-    imageAlt: 'Priyanka client result',
-    before: 'Working in a bank. Wanted to coach full time but scared to leave.',
-    after: 'Quit her banking job. Signed her first paying client at ₹1.2 lakh after installing TheCoachOS™.',
-    afterFormatted: (
-      <>
-        Quit her banking job. Signed her first paying client at <strong className="font-bold text-[#F0ECE1]">₹1.2 lakh</strong> after installing TheCoachOS™.
-      </>
-    ),
-  },
 ];
 
 export const SocialProofSection: React.FC = () => {
   return (
     <section
       id="social-proof-section"
-      className="w-full bg-[#0E1412] pt-[32px] md:pt-[56px] pb-[110px] px-[20px] md:px-[48px]"
+      className="w-full bg-[#0E1412] pt-[32px] md:pt-[56px] pb-[110px] px-[20px] md:px-[48px] flex flex-col items-center"
     >
-      <div className="w-full max-w-[1080px] mx-auto flex flex-col items-center">
-        {/* Section Headline */}
-        <motion.h2
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-          id="social-proof-headline"
-          className="w-full max-w-[320px] md:max-w-[1180px] mx-auto text-center font-bold text-[#F0ECE1] text-[22px] md:text-[44px] tracking-[-0.02em] leading-[1.25] md:leading-[1.15] mb-[28px] md:mb-[40px] [text-wrap:balance]"
-        >
-          <span className="block mb-[10px] md:mb-0">Coaches Who Had the Skill and No System.</span>
-          <span className="block">Here Is What Changed After TheCoachOS™.</span>
-        </motion.h2>
+      {/* Section Headline */}
+      <motion.h2
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+        id="social-proof-headline"
+        className="w-full max-w-[320px] md:max-w-[1180px] mx-auto text-center font-bold text-[#F0ECE1] text-[clamp(18px,5.2vw,24px)] md:text-[clamp(26px,2.6vw,34px)] tracking-[-0.02em] leading-[1.25] md:leading-[1.15] mb-[28px] md:mb-[40px] break-words [overflow-wrap:break-word] [text-wrap:balance]"
+      >
+        <span className="inline min-[1200px]:block">Coaches Who Had the Skill and No System. </span>
+        <span>
+          Here Is What Happened After We Installed the{' '}
+          <span className="text-[#C9AB8B] whitespace-nowrap">Client Acquisition System™</span>
+        </span>
+      </motion.h2>
 
+      <div className="w-full max-w-[1080px] mx-auto flex flex-col items-center">
         {/* 7 Result Cards Grid */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
           {RESULT_CARDS.map((card, index) => {

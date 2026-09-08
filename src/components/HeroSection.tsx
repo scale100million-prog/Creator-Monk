@@ -26,7 +26,7 @@ export const HeroSection: React.FC = () => {
           Scale Your Coaching Business to ₹10L a Month
         </span>
         <span className="block text-[#C9AB8B]">
-          With TheCoachOS™
+          With the Client Acquisition System™
         </span>
       </h1>
 
