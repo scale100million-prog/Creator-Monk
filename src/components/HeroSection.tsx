@@ -26,7 +26,7 @@ export const HeroSection: React.FC = () => {
           Scale Your Coaching Business to ₹10L a Month
         </span>
         <span className="block text-[#C9AB8B]">
-          With the Client Acquisition System™
+          With the Predictable Client Acquisition System™
         </span>
       </h1>
 
@@ -35,7 +35,7 @@ export const HeroSection: React.FC = () => {
         id="hero-subheadline"
         className="w-full max-w-[320px] md:max-w-[700px] mx-auto text-center text-[#A3B0A9] text-[14px] md:text-[16px] leading-[1.55] md:leading-[1.65] mb-[20px] md:mb-[48px]"
       >
-        Trusted by <strong className="font-bold text-[#F0ECE1]">153+ Coaches Across 9 Countries</strong> to Scale Without Endless DMs, Webinars, Cold Emails, or Posting Content Every Day — <strong className="font-bold text-[#C9AB8B]">₹8+ Crore Generated.</strong>
+        Trusted by <strong className="font-bold text-[#F0ECE1]">147+ Coaches Across 9 Countries</strong> to Scale Without Endless DMs, Webinars, Cold Emails, or Posting Content Every Day — <strong className="font-bold text-[#C9AB8B]">₹2+ Crore Generated.</strong>
       </p>
     </motion.div>
   );

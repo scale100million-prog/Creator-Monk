@@ -10,11 +10,25 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     name: 'Tahwid',
     image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Tahwid.JPG',
     imageAlt: 'Tahwid client result',
-    before: 'Stuck like most coaches. No system. No predictability. Income going nowhere.',
+    before: 'Stuck like most business owners. No system. No predictability. Income going nowhere.',
     after: 'Crossed ₹1 crore in coaching revenue in 12 months. Same skill. Different system.',
     afterFormatted: (
       <>
         Crossed <strong className="font-bold text-[#F0ECE1]">₹1 crore</strong> in coaching revenue in 12 months. Same skill. Different system.
+      </>
+    ),
+  },
+  {
+    id: 'card-6',
+    resultLine: '₹60 Lakh in 2 Years',
+    name: 'Supreet',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Supreet.jpg',
+    imageAlt: 'Supreet client result',
+    before: 'Zero high-paying clients. Doubted whether ₹1L+ paying clients were even possible for him.',
+    after: 'Closed a ₹3L deal from a cold stranger who had never heard of him. Built that into ₹60 Lakh over the next two years.',
+    afterFormatted: (
+      <>
+        Closed a <strong className="font-bold text-[#F0ECE1]">₹3L</strong> deal from a cold stranger who had never heard of him. Built that into <strong className="font-bold text-[#F0ECE1]">₹60 Lakh</strong> over the next two years.
       </>
     ),
   },
@@ -34,15 +48,15 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
   },
   {
     id: 'card-5',
-    resultLine: '₹5 Lakh From Two International Clients in 30 Days',
+    resultLine: '₹1 Lakh From Two International Clients in 30 Days',
     name: 'Sweta Sharma',
     image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Sweta%20Sharma.JPG',
     imageAlt: 'Sweta Sharma client result',
     before: 'Zero international clients. She did not believe dollar-paying clients were possible for her.',
-    after: 'Closed two international clients paying in dollars within 30 days. ₹5 Lakh from those two clients alone.',
+    after: 'Closed two international clients paying in dollars within 30 days. ₹1 Lakh from those two clients alone.',
     afterFormatted: (
       <>
-        Closed two international clients paying in dollars within 30 days. <strong className="font-bold text-[#F0ECE1]">₹5 Lakh</strong> from those two clients alone.
+        Closed two international clients paying in dollars within 30 days. <strong className="font-bold text-[#F0ECE1]">₹1 Lakh</strong> from those two clients alone.
       </>
     ),
   },
@@ -57,20 +71,6 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     afterFormatted: (
       <>
         Made <strong className="font-bold text-[#F0ECE1]">₹3 lakh</strong> in 30 days of installing the Client Acquisition System™.
-      </>
-    ),
-  },
-  {
-    id: 'card-6',
-    resultLine: '₹3 Lakh Deal to ₹10 Lakh a Month in Three Months',
-    name: 'Supreet',
-    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Supreet.jpg',
-    imageAlt: 'Supreet client result',
-    before: 'Zero high-paying clients. Doubted whether ₹1L+ paying clients were even possible for him.',
-    after: 'Closed a ₹3L deal from a cold stranger who had never heard of him. Scaled beyond ₹10L by month three.',
-    afterFormatted: (
-      <>
-        Closed a <strong className="font-bold text-[#F0ECE1]">₹3L</strong> deal from a cold stranger who had never heard of him. Scaled beyond <strong className="font-bold text-[#F0ECE1]">₹10L</strong> by month three.
       </>
     ),
   },
@@ -119,11 +119,8 @@ export const SocialProofSection: React.FC = () => {
         id="social-proof-headline"
         className="w-full max-w-[320px] md:max-w-[1180px] mx-auto text-center font-bold text-[#F0ECE1] text-[clamp(18px,5.2vw,24px)] md:text-[clamp(26px,2.6vw,34px)] tracking-[-0.02em] leading-[1.25] md:leading-[1.15] mb-[28px] md:mb-[40px] break-words [overflow-wrap:break-word] [text-wrap:balance]"
       >
-        <span className="inline min-[1200px]:block">Coaches Who Had the Skill and No System. </span>
-        <span>
-          Here Is What Happened After We Installed the{' '}
-          <span className="text-[#C9AB8B] whitespace-nowrap">Client Acquisition System™</span>
-        </span>
+        Here Is What Happened After We Installed the{' '}
+        <span className="text-[#C9AB8B]">Predictable Client Acquisition System™</span>
       </motion.h2>
 
       <div className="w-full max-w-[1080px] mx-auto flex flex-col items-center">
