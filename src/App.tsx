@@ -2,6 +2,7 @@ import React from 'react';
 import { VideoGateProvider } from './context/VideoGateContext';
 import { HeroSection } from './components/HeroSection';
 import { VideoSection } from './components/VideoSection';
+import { TrustedByMarquee } from './components/TrustedByMarquee';
 import { SocialProofSection } from './components/SocialProofSection';
 import { StickyFooter } from './components/StickyFooter';
 import { VideoGateModal } from './components/VideoGateModal';
@@ -23,6 +24,9 @@ export default function App() {
             <VideoSection />
           </div>
         </section>
+
+        {/* Section: Trusted By Marquee */}
+        <TrustedByMarquee />
 
         {/* Section 2: Social Proof (Headline + 7 Result Cards + CTA Button) */}
         <SocialProofSection />

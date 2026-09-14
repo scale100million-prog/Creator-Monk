@@ -27,3 +27,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@keyframes marqueeLTR {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.marquee-track-ltr {
+  display: flex;
+  width: max-content;
+  animation: marqueeLTR 20s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track-ltr:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track-ltr {
+    animation: none;
+  }
+}
+
