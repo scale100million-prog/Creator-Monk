@@ -12,7 +12,7 @@ export const HeroSection: React.FC = () => {
       {/* Qualifier Badge */}
       <div
         id="hero-qualifier-badge"
-        className="inline-flex items-center justify-center rounded-[8px] bg-[#16201D] border border-[#1E2F2A] text-[#C9AB8B] font-bold text-[12px] md:text-[13px] py-[10px] px-[18px] md:py-[12px] md:px-[24px] max-w-[300px] md:max-w-none mx-auto leading-[1.35] md:leading-tight mb-[14px] md:mb-[28px] select-none"
+        className="inline-flex items-center justify-center rounded-full bg-[#16201D] border border-[#1E2F2A] text-[#C9AB8B] font-bold text-[15px] md:text-[18px] py-[12px] px-[20px] md:py-[14px] md:px-[32px] max-w-[92vw] md:max-w-none mx-auto leading-[1.35] md:leading-tight mb-[14px] md:mb-[24px] select-none text-center"
       >
         For Coaches Stuck at ₹50K to ₹2L a Month.
       </div>
