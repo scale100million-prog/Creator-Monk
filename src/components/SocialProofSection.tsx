@@ -11,10 +11,10 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Tahwid.JPG',
     imageAlt: 'Tahwid client result',
     before: 'Stuck like most business owners. No system. No predictability. Income going nowhere.',
-    after: 'Crossed ₹1 crore in coaching revenue in 12 months. Same skill. Different system.',
+    after: 'Crossed ₹1 crore in business revenue in 12 months. Same skill. Different system.',
     afterFormatted: (
       <>
-        Crossed <strong className="font-bold text-[#FFFFFF]">₹1 crore</strong> in coaching revenue in 12 months. Same skill. Different system.
+        Crossed <strong className="font-bold text-[#FFFFFF]">₹1 crore</strong> in business revenue in 12 months. Same skill. Different system.
       </>
     ),
   },
