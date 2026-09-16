@@ -16,8 +16,8 @@ export const CtaButton: React.FC<CtaButtonProps> = ({ id, isFooter = false, clas
     rounded-[8px] cursor-pointer select-none text-center
     py-[16px] px-[32px] min-h-[48px]
     shadow-[0_4px_16px_rgba(0,0,0,0.4)]
-    hover:bg-[#F5E6A3] hover:scale-[1.02] active:scale-[0.98]
-    focus-visible:outline-2 focus-visible:outline-[#F5E6A3] focus-visible:outline-offset-2
+    hover:bg-[#E8D171] hover:scale-[1.02] active:scale-[0.98]
+    focus-visible:outline-2 focus-visible:outline-[#E8D171] focus-visible:outline-offset-2
     transition-all duration-200 ease-out
     ${isFooter ? 'w-full md:w-auto' : 'w-full sm:w-auto'}
     ${className}

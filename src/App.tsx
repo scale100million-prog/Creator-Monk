@@ -10,7 +10,7 @@ import { VideoGateModal } from './components/VideoGateModal';
 export default function App() {
   return (
     <VideoGateProvider>
-      <div className="min-h-screen w-full bg-[#0A0A0A] text-[#FFFFFF] flex flex-col items-center selection:bg-[#F5E6A3]/25 selection:text-[#F5E6A3]">
+      <div className="min-h-screen w-full bg-[#0A0A0A] text-[#FFFFFF] flex flex-col items-center selection:bg-[#E8D171]/25 selection:text-[#E8D171]">
         {/* Section 1: Hero + VSL Video + Countdown Line + CTA Button */}
         <section
           id="hero-vsl-section"

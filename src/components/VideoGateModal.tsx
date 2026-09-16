@@ -191,7 +191,7 @@ export const VideoGateModal: React.FC = () => {
                   htmlFor="lead-input-name"
                   className="text-[14px] font-medium text-[#FFFFFF] mb-[6px]"
                 >
-                  Your name <span className="text-[#F5E6A3]">*</span>
+                  Your name <span className="text-[#E8D171]">*</span>
                 </label>
                 <input
                   ref={nameInputRef}
@@ -208,7 +208,7 @@ export const VideoGateModal: React.FC = () => {
                     }
                   }}
                   disabled={isSubmitting}
-                  className={`w-full min-h-[44px] h-[48px] px-[16px] bg-[#0A0A0A] border rounded-[8px] text-[#FFFFFF] text-[15px] placeholder-[#737373] transition-colors focus:outline-none focus:border-[#F5E6A3] focus:ring-1 focus:ring-[#F5E6A3] ${
+                  className={`w-full min-h-[44px] h-[48px] px-[16px] bg-[#0A0A0A] border rounded-[8px] text-[#FFFFFF] text-[15px] placeholder-[#737373] transition-colors focus:outline-none focus:border-[#E8D171] focus:ring-1 focus:ring-[#E8D171] ${
                     errors.name ? 'border-red-500/80' : 'border-[#262626]'
                   }`}
                 />
@@ -225,7 +225,7 @@ export const VideoGateModal: React.FC = () => {
                   htmlFor="lead-input-email"
                   className="text-[14px] font-medium text-[#FFFFFF] mb-[6px]"
                 >
-                  Your email address <span className="text-[#F5E6A3]">*</span>
+                  Your email address <span className="text-[#E8D171]">*</span>
                 </label>
                 <input
                   id="lead-input-email"
@@ -241,7 +241,7 @@ export const VideoGateModal: React.FC = () => {
                     }
                   }}
                   disabled={isSubmitting}
-                  className={`w-full min-h-[44px] h-[48px] px-[16px] bg-[#0A0A0A] border rounded-[8px] text-[#FFFFFF] text-[15px] placeholder-[#737373] transition-colors focus:outline-none focus:border-[#F5E6A3] focus:ring-1 focus:ring-[#F5E6A3] ${
+                  className={`w-full min-h-[44px] h-[48px] px-[16px] bg-[#0A0A0A] border rounded-[8px] text-[#FFFFFF] text-[15px] placeholder-[#737373] transition-colors focus:outline-none focus:border-[#E8D171] focus:ring-1 focus:ring-[#E8D171] ${
                     errors.email ? 'border-red-500/80' : 'border-[#262626]'
                   }`}
                 />
@@ -258,7 +258,7 @@ export const VideoGateModal: React.FC = () => {
                   htmlFor="lead-input-phone"
                   className="text-[14px] font-medium text-[#FFFFFF] mb-[6px]"
                 >
-                  Your phone number <span className="text-[#F5E6A3]">*</span>
+                  Your phone number <span className="text-[#E8D171]">*</span>
                 </label>
                 <input
                   id="lead-input-phone"
@@ -274,7 +274,7 @@ export const VideoGateModal: React.FC = () => {
                     }
                   }}
                   disabled={isSubmitting}
-                  className={`w-full min-h-[44px] h-[48px] px-[16px] bg-[#0A0A0A] border rounded-[8px] text-[#FFFFFF] text-[15px] placeholder-[#737373] transition-colors focus:outline-none focus:border-[#F5E6A3] focus:ring-1 focus:ring-[#F5E6A3] ${
+                  className={`w-full min-h-[44px] h-[48px] px-[16px] bg-[#0A0A0A] border rounded-[8px] text-[#FFFFFF] text-[15px] placeholder-[#737373] transition-colors focus:outline-none focus:border-[#E8D171] focus:ring-1 focus:ring-[#E8D171] ${
                     errors.phone ? 'border-red-500/80' : 'border-[#262626]'
                   }`}
                 />
@@ -292,7 +292,7 @@ export const VideoGateModal: React.FC = () => {
                   type="button"
                   onClick={handleSubmit}
                   disabled={isSubmitting}
-                  className="w-full min-h-[48px] py-[16px] px-[32px] bg-[#FFFFFF] text-[#0A0A0A] font-semibold text-[16px] rounded-[8px] shadow-[0_4px_16px_rgba(0,0,0,0.4)] hover:bg-[#F5E6A3] hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-[#F5E6A3] focus-visible:outline-offset-2 transition-all duration-200 ease-out cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:bg-[#FFFFFF] flex items-center justify-center"
+                  className="w-full min-h-[48px] py-[16px] px-[32px] bg-[#FFFFFF] text-[#0A0A0A] font-semibold text-[16px] rounded-[8px] shadow-[0_4px_16px_rgba(0,0,0,0.4)] hover:bg-[#E8D171] hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-[#E8D171] focus-visible:outline-offset-2 transition-all duration-200 ease-out cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:bg-[#FFFFFF] flex items-center justify-center"
                 >
                   {isSubmitting ? (
                     <span className="inline-flex items-center gap-[8px]">

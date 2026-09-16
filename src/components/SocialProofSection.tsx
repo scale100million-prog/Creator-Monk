@@ -106,7 +106,7 @@ export const SocialProofSection: React.FC = () => {
         className="w-full max-w-[320px] md:max-w-[1180px] mx-auto text-center font-bold text-[#FFFFFF] text-[clamp(18px,5.2vw,24px)] md:text-[clamp(26px,2.6vw,34px)] tracking-[-0.02em] leading-[1.25] md:leading-[1.15] mb-[28px] md:mb-[40px] break-words [overflow-wrap:break-word] [text-wrap:balance]"
       >
         Here Is What Happened After We Installed the{' '}
-        <span className="text-[#F5E6A3]">Predictable Client Acquisition System™</span>
+        <span className="text-[#E8D171]">Predictable Client Acquisition System™</span>
       </motion.h2>
 
       <div className="w-full max-w-[1080px] mx-auto flex flex-col items-center">
@@ -140,7 +140,7 @@ export const SocialProofSection: React.FC = () => {
                     )}
 
                     {/* Result Line */}
-                    <div className="text-[16px] font-bold text-[#F5E6A3] text-center leading-snug">
+                    <div className="text-[16px] font-bold text-[#E8D171] text-center leading-snug">
                       {card.resultLine}
                     </div>
 
@@ -151,7 +151,7 @@ export const SocialProofSection: React.FC = () => {
 
                     {/* Role (omitted if none) */}
                     {card.role && (
-                      <div className="text-[12px] uppercase tracking-[0.1em] text-[#F5E6A3] font-bold text-center mt-[6px]">
+                      <div className="text-[12px] uppercase tracking-[0.1em] text-[#E8D171] font-bold text-center mt-[6px]">
                         {card.role}
                       </div>
                     )}
@@ -174,7 +174,7 @@ export const SocialProofSection: React.FC = () => {
 
                     {/* AFTER block */}
                     <div>
-                      <div className="text-[12px] uppercase font-bold tracking-[0.1em] text-[#F5E6A3]">
+                      <div className="text-[12px] uppercase font-bold tracking-[0.1em] text-[#E8D171]">
                         AFTER
                       </div>
                       <p className="text-[15px] font-normal text-[#FFFFFF] leading-[1.65] mt-[8px]">

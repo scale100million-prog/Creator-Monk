@@ -53,7 +53,7 @@ export const TrustedByMarquee: React.FC = () => {
           className="font-bold text-[22px] md:text-[32px] leading-[1.3] text-[#FFFFFF] inline-flex flex-wrap items-center justify-center gap-[10px] md:gap-[12px]"
         >
           <span>Trusted By</span>
-          <span className="inline-block bg-[#F5E6A3] text-[#0A0A0A] font-bold text-[22px] md:text-[32px] leading-tight px-[16px] py-[10px] md:px-[24px] md:py-[12px] rounded-[10px] whitespace-nowrap shadow-sm">
+          <span className="inline-block bg-[#E8D171] text-[#0A0A0A] font-bold text-[22px] md:text-[32px] leading-tight px-[16px] py-[10px] md:px-[24px] md:py-[12px] rounded-[10px] whitespace-nowrap shadow-sm">
             7 Figure Business Owners
           </span>
         </h3>
@@ -105,7 +105,7 @@ export const TrustedByMarquee: React.FC = () => {
                 key={`person-1-${person.name}-${idx}`}
                 id={`marquee-card-${person.name.toLowerCase().replace(/\s+/g, '-')}-1`}
                 style={{ flex: '0 0 auto' }}
-                className="flex items-center gap-[12px] bg-[#141414] border border-[#262626] rounded-full pl-[8px] pr-[18px] py-[8px] md:pl-[10px] md:pr-[22px] md:py-[10px] shrink-0 select-none transition-colors duration-200 hover:border-[#F5E6A3]/40"
+                className="flex items-center gap-[12px] bg-[#141414] border border-[#262626] rounded-full pl-[8px] pr-[18px] py-[8px] md:pl-[10px] md:pr-[22px] md:py-[10px] shrink-0 select-none transition-colors duration-200 hover:border-[#E8D171]/40"
               >
                 <img
                   src={person.image}
@@ -132,7 +132,7 @@ export const TrustedByMarquee: React.FC = () => {
                 key={`person-2-${person.name}-${idx}`}
                 id={`marquee-card-${person.name.toLowerCase().replace(/\s+/g, '-')}-2`}
                 style={{ flex: '0 0 auto' }}
-                className="flex items-center gap-[12px] bg-[#141414] border border-[#262626] rounded-full pl-[8px] pr-[18px] py-[8px] md:pl-[10px] md:pr-[22px] md:py-[10px] shrink-0 select-none transition-colors duration-200 hover:border-[#F5E6A3]/40"
+                className="flex items-center gap-[12px] bg-[#141414] border border-[#262626] rounded-full pl-[8px] pr-[18px] py-[8px] md:pl-[10px] md:pr-[22px] md:py-[10px] shrink-0 select-none transition-colors duration-200 hover:border-[#E8D171]/40"
               >
                 <img
                   src={person.image}
@@ -159,7 +159,7 @@ export const TrustedByMarquee: React.FC = () => {
                 key={`person-3-${person.name}-${idx}`}
                 id={`marquee-card-${person.name.toLowerCase().replace(/\s+/g, '-')}-3`}
                 style={{ flex: '0 0 auto' }}
-                className="flex items-center gap-[12px] bg-[#141414] border border-[#262626] rounded-full pl-[8px] pr-[18px] py-[8px] md:pl-[10px] md:pr-[22px] md:py-[10px] shrink-0 select-none transition-colors duration-200 hover:border-[#F5E6A3]/40"
+                className="flex items-center gap-[12px] bg-[#141414] border border-[#262626] rounded-full pl-[8px] pr-[18px] py-[8px] md:pl-[10px] md:pr-[22px] md:py-[10px] shrink-0 select-none transition-colors duration-200 hover:border-[#E8D171]/40"
               >
                 <img
                   src={person.image}

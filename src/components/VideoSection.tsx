@@ -81,7 +81,7 @@ export const VideoSection: React.FC = () => {
             {/* Play Button Wrapper with expanding ring pulse */}
             <div className="relative flex items-center justify-center group">
               {/* Soft expanding ring pulse */}
-              <div className="absolute inset-0 rounded-full bg-[#F5E6A3]/[0.35] animate-ping" style={{ animationDuration: '2s' }} />
+              <div className="absolute inset-0 rounded-full bg-[#E8D171]/[0.35] animate-ping" style={{ animationDuration: '2s' }} />
 
               {/* Main Button */}
               <div className="relative w-[68px] h-[68px] md:w-[88px] md:h-[88px] rounded-full bg-[#FFFFFF] text-[#0A0A0A] shadow-[0_12px_40px_rgba(0,0,0,0.5)] flex items-center justify-center transition-transform duration-200 ease-out group-hover:scale-[1.08]">

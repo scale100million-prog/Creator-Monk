@@ -6,7 +6,7 @@
   --color-page-bg: #0A0A0A;
   --color-card-surface: #141414;
   --color-card-border: #262626;
-  --color-accent: #F5E6A3;
+  --color-accent: #E8D171;
   --color-primary-text: #FFFFFF;
   --color-muted-text: #A0A0A0;
 
@@ -17,7 +17,7 @@
   --color-warm-ivory: #FFFFFF;
   --color-secondary-sage: #A0A0A0;
   --color-muted-sage: #A0A0A0;
-  --color-champagne-taupe: #F5E6A3;
+  --color-champagne-taupe: #E8D171;
 }
 
 html {
@@ -36,12 +36,12 @@ body {
 }
 
 ::selection {
-  background-color: rgba(245, 230, 163, 0.25);
-  color: #F5E6A3;
+  background-color: rgba(232, 209, 113, 0.25);
+  color: #E8D171;
 }
 
 :focus-visible {
-  outline: 2px solid #F5E6A3;
+  outline: 2px solid #E8D171;
   outline-offset: 2px;
 }
 
