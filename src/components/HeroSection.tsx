@@ -12,7 +12,7 @@ export const HeroSection: React.FC = () => {
       {/* Qualifier Badge */}
       <div
         id="hero-qualifier-badge"
-        className="inline-flex items-center justify-center rounded-full bg-[#16201D] border border-[#1E2F2A] text-[#C9AB8B] font-bold text-[15px] md:text-[18px] py-[12px] px-[20px] md:py-[14px] md:px-[32px] max-w-[92vw] md:max-w-none mx-auto leading-[1.35] md:leading-tight mb-[14px] md:mb-[24px] select-none text-center"
+        className="inline-flex items-center justify-center rounded-full bg-[#141414] border border-[#262626] text-[#F5E6A3] font-bold text-[13px] md:text-[18px] py-[10px] px-[18px] md:py-[14px] md:px-[32px] leading-[1.35] md:leading-tight mb-[16px] md:mb-[24px] select-none text-center"
       >
         For Coaches Stuck at ₹50K to ₹2L a Month.
       </div>
@@ -20,12 +20,12 @@ export const HeroSection: React.FC = () => {
       {/* Hero Headline */}
       <h1
         id="hero-headline"
-        className="w-full max-w-[320px] md:max-w-[1180px] mx-auto text-center font-bold tracking-[-0.02em] md:tracking-[-0.025em] text-[26px] md:text-[48px] leading-[1.2] md:leading-[1.1] mb-[12px] md:mb-[24px] [text-wrap:balance]"
+        className="w-full max-w-[1180px] mx-auto text-center font-bold tracking-[-0.02em] md:tracking-[-0.025em] text-[26px] sm:text-[36px] md:text-[48px] leading-[1.2] md:leading-[1.1] mb-[16px] md:mb-[24px]"
       >
-        <span className="block text-[#F0ECE1]">
+        <span className="block text-[#FFFFFF]">
           Scale Your Coaching Business to ₹10L a Month
         </span>
-        <span className="block text-[#C9AB8B]">
+        <span className="block text-[#F5E6A3]">
           With the Predictable Client Acquisition System™
         </span>
       </h1>
@@ -33,9 +33,9 @@ export const HeroSection: React.FC = () => {
       {/* Hero Subheadline */}
       <p
         id="hero-subheadline"
-        className="w-full max-w-[320px] md:max-w-[700px] mx-auto text-center text-[#A3B0A9] text-[14px] md:text-[16px] leading-[1.55] md:leading-[1.65] mb-[20px] md:mb-[48px]"
+        className="w-full max-w-[680px] md:max-w-[700px] mx-auto text-center text-[#A0A0A0] text-[14px] md:text-[16px] leading-[1.55] md:leading-[1.65] mb-[24px] md:mb-[48px]"
       >
-        Trusted by <strong className="font-bold text-[#F0ECE1]">147+ Coaches Across 9 Countries</strong> to Scale Without Endless DMs, Webinars, Cold Emails, or Posting Content Every Day — <strong className="font-bold text-[#C9AB8B]">₹2+ Crore Generated.</strong>
+        Trusted by <strong className="font-bold text-[#FFFFFF]">147+ Coaches Across 9 Countries</strong> to Scale Without Endless DMs, Webinars, Cold Emails, or Posting Content Every Day — <strong className="font-bold text-[#F5E6A3]">₹2+ Crore Generated.</strong>
       </p>
     </motion.div>
   );

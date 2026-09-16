@@ -10,11 +10,11 @@ import { VideoGateModal } from './components/VideoGateModal';
 export default function App() {
   return (
     <VideoGateProvider>
-      <div className="min-h-screen w-full bg-[#0E1412] text-[#F0ECE1] flex flex-col items-center selection:bg-[#C9AB8B]/20 selection:text-[#C9AB8B]">
+      <div className="min-h-screen w-full bg-[#0A0A0A] text-[#FFFFFF] flex flex-col items-center selection:bg-[#F5E6A3]/25 selection:text-[#F5E6A3]">
         {/* Section 1: Hero + VSL Video + Countdown Line + CTA Button */}
         <section
           id="hero-vsl-section"
-          className="w-full bg-gradient-to-b from-[#16201D] to-[#0E1412] pt-[20px] md:pt-[80px] pb-[32px] md:pb-[56px] px-[20px] md:px-[48px] flex flex-col items-center"
+          className="w-full bg-gradient-to-b from-[#141414] to-[#0A0A0A] pt-[32px] md:pt-[80px] pb-[32px] md:pb-[56px] px-[20px] md:px-[48px] flex flex-col items-center"
         >
           <div className="w-full max-w-[1100px] mx-auto flex flex-col items-center">
             {/* 1. Hero (Badge + Headline + Subheadline) */}

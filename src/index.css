@@ -3,28 +3,46 @@
 @theme {
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
-  --color-deep-forest: #0E1412;
-  --color-elevated-forest: #16201D;
-  --color-card-green: #1E2F2A;
-  --color-warm-ivory: #F0ECE1;
-  --color-secondary-sage: #A3B0A9;
-  --color-muted-sage: #6B7A74;
-  --color-champagne-taupe: #C9AB8B;
+  --color-page-bg: #0A0A0A;
+  --color-card-surface: #141414;
+  --color-card-border: #262626;
+  --color-accent: #F5E6A3;
+  --color-primary-text: #FFFFFF;
+  --color-muted-text: #A0A0A0;
+
+  /* Legacy tokens updated to new palette */
+  --color-deep-forest: #0A0A0A;
+  --color-elevated-forest: #141414;
+  --color-card-green: #141414;
+  --color-warm-ivory: #FFFFFF;
+  --color-secondary-sage: #A0A0A0;
+  --color-muted-sage: #A0A0A0;
+  --color-champagne-taupe: #F5E6A3;
 }
 
 html {
   scroll-behavior: smooth;
   color-scheme: dark;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #0E1412;
+  background-color: #0A0A0A;
 }
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #0E1412;
-  color: #F0ECE1;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: rgba(245, 230, 163, 0.25);
+  color: #F5E6A3;
+}
+
+:focus-visible {
+  outline: 2px solid #F5E6A3;
+  outline-offset: 2px;
 }
 
 @keyframes marqueeLTR {

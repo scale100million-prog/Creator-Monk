@@ -14,7 +14,7 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     after: 'Crossed ₹1 crore in coaching revenue in 12 months. Same skill. Different system.',
     afterFormatted: (
       <>
-        Crossed <strong className="font-bold text-[#F0ECE1]">₹1 crore</strong> in coaching revenue in 12 months. Same skill. Different system.
+        Crossed <strong className="font-bold text-[#FFFFFF]">₹1 crore</strong> in coaching revenue in 12 months. Same skill. Different system.
       </>
     ),
   },
@@ -28,21 +28,7 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     after: 'Closed a ₹3L deal from a cold stranger who had never heard of him. Built that into ₹60 Lakh over the next two years.',
     afterFormatted: (
       <>
-        Closed a <strong className="font-bold text-[#F0ECE1]">₹3L</strong> deal from a cold stranger who had never heard of him. Built that into <strong className="font-bold text-[#F0ECE1]">₹60 Lakh</strong> over the next two years.
-      </>
-    ),
-  },
-  {
-    id: 'card-2',
-    resultLine: '₹5L in Six Weeks, ₹10L in 60 Days',
-    name: 'Upasana',
-    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Upasana.jpg',
-    imageAlt: 'Upasana client result',
-    before: 'Spent over ₹1L on programs. Got information. Zero results.',
-    after: 'Crossed ₹5L in six weeks. Scaled to ₹10L in the next 60 days.',
-    afterFormatted: (
-      <>
-        Crossed <strong className="font-bold text-[#F0ECE1]">₹5L</strong> in six weeks. Scaled to <strong className="font-bold text-[#F0ECE1]">₹10L</strong> in the next 60 days.
+        Closed a <strong className="font-bold text-[#FFFFFF]">₹3L</strong> deal from a cold stranger who had never heard of him. Built that into <strong className="font-bold text-[#FFFFFF]">₹60 Lakh</strong> over the next two years.
       </>
     ),
   },
@@ -56,7 +42,7 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     after: 'Closed two international clients paying in dollars within 30 days. ₹1 Lakh from those two clients alone.',
     afterFormatted: (
       <>
-        Closed two international clients paying in dollars within 30 days. <strong className="font-bold text-[#F0ECE1]">₹1 Lakh</strong> from those two clients alone.
+        Closed two international clients paying in dollars within 30 days. <strong className="font-bold text-[#FFFFFF]">₹1 Lakh</strong> from those two clients alone.
       </>
     ),
   },
@@ -70,7 +56,7 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     after: 'Made ₹3 lakh in 30 days of installing the Client Acquisition System™.',
     afterFormatted: (
       <>
-        Made <strong className="font-bold text-[#F0ECE1]">₹3 lakh</strong> in 30 days of installing the Client Acquisition System™.
+        Made <strong className="font-bold text-[#FFFFFF]">₹3 lakh</strong> in 30 days of installing the Client Acquisition System™.
       </>
     ),
   },
@@ -84,7 +70,7 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     after: 'Signed her first paying client at ₹1.2 lakh after installing the Client Acquisition System™. Then quit the bank job for good.',
     afterFormatted: (
       <>
-        Signed her first paying client at <strong className="font-bold text-[#F0ECE1]">₹1.2 lakh</strong> after installing the Client Acquisition System™. Then quit the bank job for good.
+        Signed her first paying client at <strong className="font-bold text-[#FFFFFF]">₹1.2 lakh</strong> after installing the Client Acquisition System™. Then quit the bank job for good.
       </>
     ),
   },
@@ -108,7 +94,7 @@ export const SocialProofSection: React.FC = () => {
   return (
     <section
       id="social-proof-section"
-      className="w-full bg-[#0E1412] pt-[32px] md:pt-[56px] pb-[110px] px-[20px] md:px-[48px] flex flex-col items-center"
+      className="w-full bg-[#0A0A0A] pt-[32px] md:pt-[56px] pb-[110px] px-[20px] md:px-[48px] flex flex-col items-center"
     >
       {/* Section Headline */}
       <motion.h2
@@ -117,17 +103,16 @@ export const SocialProofSection: React.FC = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
         id="social-proof-headline"
-        className="w-full max-w-[320px] md:max-w-[1180px] mx-auto text-center font-bold text-[#F0ECE1] text-[clamp(18px,5.2vw,24px)] md:text-[clamp(26px,2.6vw,34px)] tracking-[-0.02em] leading-[1.25] md:leading-[1.15] mb-[28px] md:mb-[40px] break-words [overflow-wrap:break-word] [text-wrap:balance]"
+        className="w-full max-w-[320px] md:max-w-[1180px] mx-auto text-center font-bold text-[#FFFFFF] text-[clamp(18px,5.2vw,24px)] md:text-[clamp(26px,2.6vw,34px)] tracking-[-0.02em] leading-[1.25] md:leading-[1.15] mb-[28px] md:mb-[40px] break-words [overflow-wrap:break-word] [text-wrap:balance]"
       >
         Here Is What Happened After We Installed the{' '}
-        <span className="text-[#C9AB8B]">Predictable Client Acquisition System™</span>
+        <span className="text-[#F5E6A3]">Predictable Client Acquisition System™</span>
       </motion.h2>
 
       <div className="w-full max-w-[1080px] mx-auto flex flex-col items-center">
-        {/* 7 Result Cards Grid */}
+        {/* Result Cards Grid */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
           {RESULT_CARDS.map((card, index) => {
-            const isLastCard = index === 6;
             return (
               <motion.div
                 key={card.id}
@@ -135,20 +120,16 @@ export const SocialProofSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: index * 0.06, ease: 'easeOut' }}
-                className={`w-full flex flex-col ${
-                  isLastCard
-                    ? 'md:col-span-2 md:max-w-[480px] md:mx-auto lg:col-span-1 lg:max-w-none lg:mx-0 lg:col-start-2'
-                    : ''
-                }`}
+                className="w-full flex flex-col"
               >
                 <div
                   id={`result-card-${card.id}`}
-                  className="w-full h-full flex flex-col justify-between bg-[#16201D] border border-[#1E2F2A] rounded-[10px] p-[24px]"
+                  className="w-full h-full flex flex-col justify-between bg-[#141414] border border-[#262626] rounded-[10px] p-[24px]"
                 >
                   <div>
                     {/* Card Photo */}
                     {card.image && (
-                      <div className="w-full h-[300px] md:h-[260px] flex items-center justify-center bg-[#1E2F2A] rounded-[10px] overflow-hidden mb-[20px]">
+                      <div className="w-full h-[300px] md:h-[260px] flex items-center justify-center bg-[#1A1A1A] border border-[#262626] rounded-[10px] overflow-hidden mb-[20px]">
                         <img
                           src={card.image}
                           alt={card.imageAlt || `${card.name} client result`}
@@ -159,31 +140,31 @@ export const SocialProofSection: React.FC = () => {
                     )}
 
                     {/* Result Line */}
-                    <div className="text-[16px] font-bold text-[#C9AB8B] text-center leading-snug">
+                    <div className="text-[16px] font-bold text-[#F5E6A3] text-center leading-snug">
                       {card.resultLine}
                     </div>
 
                     {/* Name */}
-                    <div className="text-[18px] font-bold text-[#F0ECE1] text-center mt-[16px] leading-tight">
+                    <div className="text-[18px] font-bold text-[#FFFFFF] text-center mt-[16px] leading-tight">
                       {card.name}
                     </div>
 
                     {/* Role (omitted if none) */}
                     {card.role && (
-                      <div className="text-[12px] uppercase tracking-[0.1em] text-[#C9AB8B] font-bold text-center mt-[6px]">
+                      <div className="text-[12px] uppercase tracking-[0.1em] text-[#F5E6A3] font-bold text-center mt-[6px]">
                         {card.role}
                       </div>
                     )}
 
                     {/* Divider */}
-                    <div className="w-full my-[24px] border-t border-[#1E2F2A]" />
+                    <div className="w-full my-[24px] border-t border-[#262626]" />
 
                     {/* BEFORE block */}
                     <div>
-                      <div className="text-[12px] uppercase font-bold tracking-[0.1em] text-[#6B7A74]">
+                      <div className="text-[12px] uppercase font-bold tracking-[0.1em] text-[#A0A0A0]">
                         BEFORE
                       </div>
-                      <p className="text-[15px] font-normal text-[#A3B0A9] leading-[1.65] mt-[8px]">
+                      <p className="text-[15px] font-normal text-[#A0A0A0] leading-[1.65] mt-[8px]">
                         {card.before}
                       </p>
                     </div>
@@ -193,10 +174,10 @@ export const SocialProofSection: React.FC = () => {
 
                     {/* AFTER block */}
                     <div>
-                      <div className="text-[12px] uppercase font-bold tracking-[0.1em] text-[#C9AB8B]">
+                      <div className="text-[12px] uppercase font-bold tracking-[0.1em] text-[#F5E6A3]">
                         AFTER
                       </div>
-                      <p className="text-[15px] font-normal text-[#F0ECE1] leading-[1.65] mt-[8px]">
+                      <p className="text-[15px] font-normal text-[#FFFFFF] leading-[1.65] mt-[8px]">
                         {card.afterFormatted}
                       </p>
                     </div>
@@ -204,9 +185,9 @@ export const SocialProofSection: React.FC = () => {
 
                   {/* Quote block (only if present) */}
                   {card.quote && (
-                    <div className="mt-[20px] bg-[#1E2F2A] rounded-[10px] p-[16px]">
+                    <div className="mt-[20px] bg-[#1A1A1A] border border-[#262626] rounded-[10px] p-[16px]">
                       <p
-                        className="italic text-[15px] text-[#A3B0A9] leading-[1.6]"
+                        className="italic text-[15px] text-[#A0A0A0] leading-[1.6]"
                         style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                       >
                         "{card.quote}"

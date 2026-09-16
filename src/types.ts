@@ -11,15 +11,9 @@ export interface ResultCardData {
 }
 
 export interface VideoGateContextType {
-  watchedSeconds: Set<number>;
-  isUnlocked: boolean;
-  remaining: number;
-  hasPlayed: boolean;
-  isPlaying: boolean;
   isModalOpen: boolean;
   openModal: () => void;
   closeModal: () => void;
-  playVideo: () => void;
   ctaLink: string;
   ctaText: string;
 }
