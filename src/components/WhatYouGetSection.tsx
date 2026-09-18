@@ -19,7 +19,7 @@ const DELIVERABLES: CallDeliverable[] = [
   },
   {
     id: 'deliverable-2',
-    imageSrc: 'https://placehold.co/640x360/1a1a1a/E8D171?text=PLACEHOLDER_IMG_2',
+    imageSrc: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/mro%20board%20photo.png',
     imageAlt: 'Complete walkthrough of backend processes',
     highlightText: 'Complete Walkthrough',
     normalText: ' of our backend processes and systems',
