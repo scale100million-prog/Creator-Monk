@@ -3,6 +3,7 @@ import { VideoGateProvider } from './context/VideoGateContext';
 import { HeroSection } from './components/HeroSection';
 import { VideoSection } from './components/VideoSection';
 import { TrustedByMarquee } from './components/TrustedByMarquee';
+import { WhatYouGetSection } from './components/WhatYouGetSection';
 import { SocialProofSection } from './components/SocialProofSection';
 import { StickyFooter } from './components/StickyFooter';
 import { VideoGateModal } from './components/VideoGateModal';
@@ -27,6 +28,9 @@ export default function App() {
 
         {/* Section: Trusted By Marquee */}
         <TrustedByMarquee />
+
+        {/* Section: What You'll Get On This Call */}
+        <WhatYouGetSection />
 
         {/* Section 2: Social Proof (Headline + 7 Result Cards + CTA Button) */}
         <SocialProofSection />
