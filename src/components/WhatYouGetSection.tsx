@@ -12,8 +12,8 @@ interface CallDeliverable {
 const DELIVERABLES: CallDeliverable[] = [
   {
     id: 'deliverable-1',
-    imageSrc: 'https://placehold.co/640x360/1a1a1a/E8D171?text=PLACEHOLDER_IMG_1',
-    imageAlt: 'Personalized breakdown and audit',
+    imageSrc: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/1-1-%20session%20picture.jpeg',
+    imageAlt: '1-1 Session',
     highlightText: 'Personalized Breakdown',
     normalText: ' and audit of your current situation to figure out your main bottleneck',
   },
@@ -26,10 +26,10 @@ const DELIVERABLES: CallDeliverable[] = [
   },
   {
     id: 'deliverable-3',
-    imageSrc: 'https://placehold.co/640x360/1a1a1a/E8D171?text=PLACEHOLDER_IMG_3',
+    imageSrc: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/roadmap_blurred_light.png',
     imageAlt: 'Personalized roadmap',
-    highlightText: 'Personalized Roadmap',
-    normalText: ' which helps you achieve your goals step by step',
+    highlightText: 'A Personalized Roadmap',
+    normalText: ' To Help Achieve Your Business Goal',
   },
 ];
 
@@ -76,7 +76,13 @@ export const WhatYouGetSection: React.FC = () => {
                     <img
                       src={item.imageSrc}
                       alt={item.imageAlt}
-                      className="w-full h-full object-cover rounded-[10px]"
+                      className={`w-full h-full ${
+                        index === 0
+                          ? 'object-contain object-[center_center]'
+                          : index === 2
+                          ? 'object-contain object-[top_center]'
+                          : 'object-cover'
+                      } rounded-[10px]`}
                       loading="lazy"
                     />
                   </div>
