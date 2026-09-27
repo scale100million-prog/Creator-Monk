@@ -12,15 +12,15 @@ interface CallDeliverable {
 const DELIVERABLES: CallDeliverable[] = [
   {
     id: 'deliverable-1',
-    imageSrc: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/1-1-%20session%20picture.jpeg',
-    imageAlt: '1-1 Session',
+    imageSrc: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/blurred_screenshot%20img%201.png',
+    imageAlt: 'Personalized breakdown and audit roadmap',
     highlightText: 'Personalized Breakdown',
     normalText: ' and audit of your current situation to figure out your main bottleneck',
   },
   {
     id: 'deliverable-2',
-    imageSrc: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/mro%20board%20photo.png',
-    imageAlt: 'Complete walkthrough of backend processes',
+    imageSrc: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/miro_board_blurred.png',
+    imageAlt: 'Complete walkthrough of our backend processes and systems',
     highlightText: 'Complete Walkthrough',
     normalText: ' of our backend processes and systems',
   },

@@ -64,8 +64,8 @@ const RESULT_CARDS: (ResultCardData & { afterFormatted: React.ReactNode })[] = [
     id: 'card-7',
     resultLine: 'Quit Her Bank Job and Signed a ₹1.2 Lakh Client',
     name: 'Priyanka',
-    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/Priyanka.jpeg',
-    imageAlt: 'Priyanka client result',
+    image: 'https://raw.githubusercontent.com/scale100million-prog/my-images/main/priyanka%20new%20photo.png',
+    imageAlt: 'Priyanka',
     before: 'Working a full time bank job. Wanted to coach but had no proof she could earn from it.',
     after: 'Signed her first paying client at ₹1.2 lakh after installing the Client Acquisition System™. Then quit the bank job for good.',
     afterFormatted: (
@@ -134,7 +134,7 @@ export const SocialProofSection: React.FC = () => {
                           src={card.image}
                           alt={card.imageAlt || `${card.name} client result`}
                           loading="lazy"
-                          className="w-full h-full object-contain"
+                          className={card.id === 'card-7' ? 'w-full h-full object-cover object-[center_19%]' : 'w-full h-full object-contain'}
                         />
                       </div>
                     )}

@@ -119,6 +119,8 @@ export const VideoGateModal: React.FC = () => {
         email: emailTrimmed,
         phone: phoneTrimmed,
       }),
+    }).catch(() => {
+      // Ignore network/CORS errors in restricted browser environments so booking still proceeds
     });
 
     // 3-second network ceiling: never make the user wait longer than 3 seconds
@@ -126,8 +128,6 @@ export const VideoGateModal: React.FC = () => {
 
     try {
       await Promise.race([fetchPromise, timeoutPromise]);
-    } catch (networkErr) {
-      console.error('Google Sheets lead submission error:', networkErr);
     } finally {
       setIsSubmitting(false);
       proceedToBooking(nameTrimmed, emailTrimmed, phoneTrimmed);

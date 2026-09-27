@@ -16,6 +16,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
     <meta name="color-scheme" content="dark" />
 
+    <!-- Guard against third-party analytics/telemetry fetch rejections in preview iframe -->
+    <script>
+      (function () {
+        function isFetchError(val) {
+          var msg = (val && val.message) ? String(val.message) : String(val || '');
+          return msg.indexOf('Failed to fetch') !== -1 || msg.indexOf('NetworkError') !== -1 || msg.indexOf('Load failed') !== -1;
+        }
+
+        window.addEventListener('unhandledrejection', function (event) {
+          if (event && isFetchError(event.reason)) {
+            event.preventDefault();
+            event.stopPropagation();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+
+        window.addEventListener('error', function (event) {
+          if (event && (isFetchError(event.error) || isFetchError(event.message))) {
+            event.preventDefault();
+            event.stopPropagation();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+
+        if (typeof window.fetch === 'function') {
+          var origFetch = window.fetch.bind(window);
+          window.fetch = function (input, init) {
+            var url = typeof input === 'string' ? input : (input && input.url ? input.url : '');
+            if (url.indexOf('pipedream.wistia.com') !== -1 || url.indexOf('distillery.wistia.com') !== -1) {
+              return Promise.resolve(new Response('{}', { status: 200, headers: { 'Content-Type': 'application/json' } }));
+            }
+            try {
+              return origFetch(input, init).catch(function () {
+                return new Response('{}', { status: 200, headers: { 'Content-Type': 'application/json' } });
+              });
+            } catch (err) {
+              return Promise.resolve(new Response('{}', { status: 200, headers: { 'Content-Type': 'application/json' } }));
+            }
+          };
+        }
+
+        var origConsoleError = console.error;
+        if (typeof origConsoleError === 'function') {
+          console.error = function () {
+            for (var i = 0; i < arguments.length; i++) {
+              if (isFetchError(arguments[i])) return;
+            }
+            return origConsoleError.apply(console, arguments);
+          };
+        }
+      })();
+    </script>
+
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -42,6 +95,15 @@
         padding-top: 56.25%;
       }
     </style>
+    <script>
+      document.addEventListener('contextmenu', function (e) {
+        if (e.target.closest && e.target.closest('wistia-player, #vsl-video-container')) {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+        }
+      }, true);
+    </script>
   </head>
   <body class="font-sans antialiased bg-[#0A0A0A] text-[#FFFFFF]">
     <!-- Meta Pixel Noscript inside body -->

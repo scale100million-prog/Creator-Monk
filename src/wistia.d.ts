@@ -7,7 +7,7 @@ declare global {
         'wistia-player': React.DetailedHTMLProps<
           React.HTMLAttributes<HTMLElement>,
           HTMLElement
-        > & { 'media-id'?: string; aspect?: string };
+        > & { 'media-id'?: string; aspect?: string; 'copy-link-and-thumbnail'?: string };
       }
     }
   }
